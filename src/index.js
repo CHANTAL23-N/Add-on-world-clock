@@ -5,7 +5,7 @@ function updatedParisTime() {
   let parisTime = moment().tz("Europe/Paris");
 
   parisDateElement.innerHTML = parisTime.format("MMMM Do YYYY");
-  parisTimeElement.innerHTML = parisTime.format("h:mm:ss [<small]A[</small>]");
+  parisTimeElement.innerHTML = parisTime.format("h:mm:ss [<small>]A[</small>]");
 }
 updatedParisTime();
 setInterval(updatedParisTime, 1000);
@@ -16,5 +16,5 @@ let losAngelesTime = moment().tz("America/Los_Angeles");
 
 losAngelesDateElement.innerHTML = losAngelesTime.format("MMMM Do YYYY");
 losAngelesTimeElement.innerHTML = losAngelesTime.format(
-  "h:mm:ss [<small]A[</small>]"
+  "h:mm:ss [<small>]A[</small>]"
 );
